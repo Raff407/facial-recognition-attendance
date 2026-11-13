@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------
+# Secrets - NEVER commit these
+# ---------------------------------------------------------------
+# Firebase service-account keys / any Google credentials
+SAK.json
+serviceAccountKey*.json
+*firebase-adminsdk*.json
+*-adminsdk-*.json
+*credentials*.json
+google-services.json
+GoogleService-Info.plist
+# Environment files (API keys, database URLs)
+.env
+.env.*
+!.env.example
+# Generic key / certificate material
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# ---------------------------------------------------------------
+# Personal / biometric data
+# ---------------------------------------------------------------
+# Student photos - only the placeholder README is tracked
+Images/*
+!Images/README.md
+# Serialised face encodings (biometric data derived from photos)
+EncodedFile.p
+*.pickle
+*.pkl
+
+# ---------------------------------------------------------------
+# Python / tooling
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Model weights (download separately if needed)
+*.pt
+yolo-Weights/
